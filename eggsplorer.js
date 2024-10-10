@@ -1,4 +1,6 @@
 const proxyList = document.getElementById('proxyList');
+const workingProxiesElement = document.getElementById('workingProxies');
+let workingProxies = 0;
 
 const checkProxy = (proxy) => {
   return fetch(proxy, { mode: 'no-cors' })
@@ -31,6 +33,9 @@ const appendListItem = (proxy, isControl = false) => {
     checkProxy(proxy).then((isAccessible) => {
       statusSpan.textContent = isAccessible ? '✔' : '✖';
       statusSpan.classList.add(isAccessible ? 'yea' : 'nah');
+
+      if (isAccessible) workingProxies++;
+      workingProxiesElement.textContent = `Working Proxies: ${workingProxies}`;
     });
   }
   listItem.appendChild(statusSpan);
