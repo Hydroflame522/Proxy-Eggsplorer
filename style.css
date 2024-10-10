@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #d4d4d4;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.proxy-list {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.proxy-list li {
+  color: black;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: rgb(242, 242, 242, 0.6);
+  border: 0px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.yea {
+  color: rgb(0, 150, 0);
+}
+
+.nah {
+  color: rgb(255, 0, 0);
+}
+
+/* Tooltip container */
+.control-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+
+.control-tooltip::after {
+  content: "This tests whether the fetcher is working! If it's green, refresh the page.";
+  visibility: hidden;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgb(255, 0, 0);
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.control-tooltip:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
