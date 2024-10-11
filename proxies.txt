@@ -17,6 +17,7 @@ egghead.institute
 eggisthenewblack.com
 eggsarecool.com
 eggshock.com
+eggshock.me
 eggshooter.best
 eggshooter.com
 eggwarfare.com
@@ -43,6 +44,7 @@ scrambled.today
 scrambled.us
 scrambled.world
 shellshockers.best
+shellshockers.ca
 shellshockers.club
 shellshockers.life
 shellshockers.site
@@ -58,8 +60,9 @@ violentegg.club
 violentegg.fun
 yolk.best
 yolk.life
+yolk.monster
 yolk.rocks
-yolk.tech
 yolk.quest
+yolk.tech
 yolk.today
 zygote.cafe
