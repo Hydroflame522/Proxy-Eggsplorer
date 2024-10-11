@@ -13,12 +13,8 @@ a:hover {
   color: rgba(0, 0, 0, 0.5);
 }
 
-h1 {
+h1, h3, p {
   color: black;
-  text-align: center;
-}
-
-h3 {
   text-align: center;
 }
 
