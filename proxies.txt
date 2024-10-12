@@ -1,5 +1,6 @@
 shellshock.io
 algebra.best
+algebra.monster
 algebra.vip
 biologyclass.club
 combateggs.com
@@ -13,6 +14,7 @@ eggboy.xyz
 eggcombat.com
 egg.dance
 eggfacts.fun
+egggames.best
 egghead.institute
 eggisthenewblack.com
 eggsarecool.com
@@ -44,6 +46,8 @@ scrambled.tech
 scrambled.today
 scrambled.us
 scrambled.world
+shellgame.me
+shellplay.live
 shellshockers.best
 shellshockers.ca
 shellshockers.club
