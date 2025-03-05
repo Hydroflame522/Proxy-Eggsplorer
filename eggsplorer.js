@@ -35,7 +35,7 @@ const appendListItem = (proxy, isControl = false) => {
       statusSpan.classList.add(isAccessible ? 'yea' : 'nah');
 
       if (isAccessible) workingProxies++;
-      workingProxiesElement.textContent = `Working Proxies: ${workingProxies} / ${proxies.length} (${workingProxies/proxies.length}%)`;
+      workingProxiesElement.textContent = `Working Proxies: ${workingProxies} / ${proxies.length}`;
     });
   }
   listItem.appendChild(statusSpan);
