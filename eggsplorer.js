@@ -35,7 +35,7 @@ const appendListItem = (proxy, isControl = false) => {
       statusSpan.classList.add(isAccessible ? 'yea' : 'nah');
 
       if (isAccessible) workingProxies++;
-      workingProxiesElement.textContent = `Working Proxies: ${workingProxies} / ${proxies.length}`;
+      workingProxiesElement.textContent = `Working Proxies: ${workingProxies} / ${totalProxies}`;
     });
   }
   listItem.appendChild(statusSpan);
@@ -47,6 +47,7 @@ const loadProxies = (filePath) => {
     .then(response => response.text())
     .then(text => {
       const proxies = text.split('\n').filter(line => line.trim() !== '');
+      const totalProxies = proxies.length;
       const controlVariable = `https://${generateRandomString()}.com`;
       appendListItem(controlVariable, true);
 
