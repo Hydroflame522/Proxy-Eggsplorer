@@ -1,6 +1,8 @@
 const proxyList = document.getElementById('proxyList');
 const workingProxiesElement = document.getElementById('workingProxies');
+
 let workingProxies = 0;
+let totalProxies = 0;
 
 const checkProxy = (proxy) => {
   return fetch(proxy, { mode: 'no-cors' })
@@ -47,8 +49,10 @@ const loadProxies = (filePath) => {
     .then(response => response.text())
     .then(text => {
       const proxies = text.split('\n').filter(line => line.trim() !== '');
-      const totalProxies = proxies.length;
       const controlVariable = `https://${generateRandomString()}.com`;
+
+      totalProxies = proxies.length;
+
       appendListItem(controlVariable, true);
 
       proxies.forEach(domain => {
