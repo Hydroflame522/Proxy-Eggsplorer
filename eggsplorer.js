@@ -5,8 +5,8 @@ let workingProxies = 0;
 let totalProxies = 0;
 
 const checkProxy = (proxy) => {
-  return fetch(proxy, { mode: 'no-cors' })
-    .then(() => true)
+  return fetch(proxy + '/ping-test.php', { signal: AbortSignal.timeout(5000) })
+    .then((r) => r.text()).then((r) => r === 'shell.ok' ? true : false)
     .catch(() => false);
 };
 
